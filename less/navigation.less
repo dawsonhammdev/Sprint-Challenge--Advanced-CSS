@@ -1,1 +1,36 @@
 // Navigation code here
+
+nav{
+    .flex(flex, column);
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 120px;
+    background-color: rgba(247, 246, 247, 0.87);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+
+
+
+    .main-menu{
+        width:30%;
+        .flex(flex, row);
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @media @phone{
+            width: 70%;
+        }
+    }
+
+    a{
+        color: #242A3B;
+        .navlinks(none, 1.6rem)
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+
+}//end of nav styling
